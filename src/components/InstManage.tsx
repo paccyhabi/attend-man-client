@@ -13,7 +13,7 @@ const InstManage = () => {
   }
 
   const fetchInstitutions = async () => {
-    const response = await axios.get('http://localhost:8080/api/institutions/allInstitutions', {
+    const response = await axios.get('https://attendance-management-ipoq.onrender.com/api/institutions/allInstitutions', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

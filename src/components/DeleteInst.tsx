@@ -11,7 +11,7 @@ const DeleteInst = () => {
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
-      return await axios.delete(`http://localhost:8080/api/institutions/${id}`, config);
+      return await axios.delete(`https://attendance-management-ipoq.onrender.com/api/institutions/${id}`, config);
     },
     {
       onSuccess: () => {

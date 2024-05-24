@@ -22,7 +22,7 @@ const EditInst = () => {
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
-      const response = await axios.patch(`http://localhost:8080/api/institutions/${id}`, data, config);
+      const response = await axios.patch(`https://attendance-management-ipoq.onrender.com/api/institutions/${id}`, data, config);
       return response.data;
     };
     const mutation = useMutation(addInstitution, {

@@ -22,7 +22,7 @@ const InstAdd = () => {
       const config = {
         headers: { Authorization: `Bearer ${token}` },
       };
-      const response = await axios.post('http://localhost:8080/api/institutions/addInstitution', data, config);
+      const response = await axios.post('https://attendance-management-ipoq.onrender.com/api/institutions/addInstitution', data, config);
       return response.data;
     };
     const mutation = useMutation(addInstitution, {
